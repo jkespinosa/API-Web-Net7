@@ -5,6 +5,8 @@ using ExampleCode.Models.DTO;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Runtime.Intrinsics.Arm;
+using System.Net;
+
 
 namespace ExampleCode.API.Controllers
 {
@@ -15,29 +17,36 @@ namespace ExampleCode.API.Controllers
         private readonly IUserRepository _userService;
         private readonly IMapper _mapper;
         //private readonly ILogger _logger;
+        protected APIResponse _response;
 
         public UserController(IUserRepository users, IMapper mapper)
         {
             _userService = users;
             _mapper = mapper;
+            _response = new();
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserDto>>> GetUsertList()
+        public async Task<ActionResult<APIResponse>> GetUsertList()
         {
             //_logger.LogInformation("Ibtener todos los suarios");
             try
             {
                 IEnumerable<User> usersList = await _userService.GetAllUserList();
 
-                return Ok(_mapper.Map<IEnumerable<UserDto>>(usersList));
+                _response.result = _mapper.Map<IEnumerable<UserDto>>(usersList);
+                _response.statusCode = HttpStatusCode.OK;
+
+                return Ok(_response);
             }
             catch (Exception ex)
             {
                 //_logger.LogError(ex.Message);
 
-                return BadRequest(ex.Message);
+                _response.isExitoso = false;
+                _response.errorMessage = new List<string>() { ex.ToString() };
 
+                return _response;
             }
         }
 
@@ -45,70 +54,95 @@ namespace ExampleCode.API.Controllers
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
-        public async Task<ActionResult<UserDto>> GetUsertById([FromBody] int Id)
+        public async Task<ActionResult<APIResponse>> GetUsertById( int Id)
         {
             if (Id == 0)
+                //_response.statusCode= HttpStatusCode.BadRequest;
                 return BadRequest();
 
             try
             {
-                var userId = await _userService.GetUserById(Id);
+                User userId = await _userService.GetUserById(Id);
 
                 if (userId == null)
+                    // _response.statusCode= HttpStatusCode.NotFound;
                     return NotFound();
 
-                return Ok(_mapper.Map<UserDto>(userId));
+                _response.result = _mapper.Map<UserDto>(userId);
+                _response.statusCode = HttpStatusCode.OK;
+                
+                return Ok (_response);
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                _response.isExitoso = false;
+                _response.errorMessage = new List<string>() { ex.ToString() };
             }
+
+            return _response;
         }
 
         [HttpPost]
         [Route("AddUser")]
-        public async Task<ActionResult<UserCreateDto>> Add([FromBody] UserCreateDto createDto)
+        public async Task<ActionResult<APIResponse>> Add([FromBody] UserCreateDto createDto)
         {
-            if (createDto == null)
-                return BadRequest(createDto);
-
-            User model = _mapper.Map<User>(createDto);  
-
-            var result = await _userService.AddUser(model);
-            if (result == false)
+            try
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Something Went Wrong");
-            }
-            // return Ok("Added Successfully");
+                if (createDto == null)
+                    return BadRequest(createDto);
 
-            return CreatedAtRoute("GetUsertById", new { id = model.Id }, model);
+                User model = _mapper.Map<User>(createDto);
+
+                var result = await _userService.AddUser(model);
+                if (result == false)
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError, "Something Went Wrong");
+                }
+               
+                _response.statusCode = HttpStatusCode.Created;
+                _response.result = model;
+
+                return CreatedAtRoute("GetUsertById", new { id = model.Id }, _response);
+
+            }
+            catch (Exception ex)
+            {
+                _response.isExitoso = false;
+                _response.errorMessage = new List<string>() { ex.ToString() };
+
+                return _response;
+
+            }
         }
 
         [HttpPut]
-        public async Task<ActionResult<UserUpdateDto>> Put(int id, [FromBody] UserUpdateDto updateDto)
+        public async Task<ActionResult<APIResponse>> Put(int id, [FromBody] UserUpdateDto updateDto)
         {
-            if (updateDto == null)
-            {
-                return BadRequest();
-            }
-            //User model = new()
-            //{
-            //    Name = modelDto.Name,
-            //    LastName = modelDto.LastName
-            //};
-            User model = _mapper.Map<User>(updateDto);
 
-            try
-            {
+            try {
+
+                if (updateDto == null)
+                {
+                    return BadRequest();
+                }
+               
+                User model = _mapper.Map<User>(updateDto);
+
                 var result = await _userService.ModifyUser(model);
+                  
+
+                _response.result = _mapper.Map<UserDto>(result);
+                _response.statusCode = HttpStatusCode.OK;
+
                 return Ok(result);
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                _response.isExitoso = false;
+                _response.errorMessage = new List<string>() { ex.ToString() };
             }
 
-
+            return _response;
         }
 
         [HttpDelete]

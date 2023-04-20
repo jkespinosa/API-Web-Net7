@@ -3730,11 +3730,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode\\ExampleCode.API.csproj",
+      "projectUniqueName": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode\\ExampleCode.API.csproj",
       "projectName": "ExampleCode.API",
-      "projectPath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode\\ExampleCode.API.csproj",
+      "projectPath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode\\ExampleCode.API.csproj",
       "packagesPath": "C:\\Users\\HP2022\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode\\obj\\",
+      "outputPath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3754,8 +3754,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.DataAccess\\ExampleCode.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.DataAccess\\ExampleCode.DataAccess.csproj"
+            "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.DataAccess\\ExampleCode.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.DataAccess\\ExampleCode.DataAccess.csproj"
             }
           }
         }

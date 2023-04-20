@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Models\\ExampleCode.Models.csproj": {}
+    "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Models\\ExampleCode.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Models\\ExampleCode.Models.csproj": {
+    "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Models\\ExampleCode.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Models\\ExampleCode.Models.csproj",
+        "projectUniqueName": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Models\\ExampleCode.Models.csproj",
         "projectName": "ExampleCode.Models",
-        "projectPath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Models\\ExampleCode.Models.csproj",
+        "projectPath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Models\\ExampleCode.Models.csproj",
         "packagesPath": "C:\\Users\\HP2022\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Models\\obj\\",
+        "outputPath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

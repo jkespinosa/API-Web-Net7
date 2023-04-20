@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z3QBgmUfSCX7STZR9x31tLX/chxcWUA3LPsAocAKA1erKKGBIZCcmJWp9O/v9gUuyQrFSJ6oMNjPkxnOo+Y2hA==",
+  "dgSpecHash": "Ear2DlWviQ4GBa9N3ZPp/bVSvDS68OPmRy7Xu3IeYU0L6Ne4j81iz6epnniG2rWR/esDXSUEmvz6tluZxagZWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Models\\ExampleCode.Models.csproj",
+  "projectFilePath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Models\\ExampleCode.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

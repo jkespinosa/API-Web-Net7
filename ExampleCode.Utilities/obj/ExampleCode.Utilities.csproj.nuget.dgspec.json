@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Utilities\\ExampleCode.Utilities.csproj": {}
+    "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Utilities\\ExampleCode.Utilities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Utilities\\ExampleCode.Utilities.csproj": {
+    "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Utilities\\ExampleCode.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Utilities\\ExampleCode.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Utilities\\ExampleCode.Utilities.csproj",
         "projectName": "ExampleCode.Utilities",
-        "projectPath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Utilities\\ExampleCode.Utilities.csproj",
+        "projectPath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Utilities\\ExampleCode.Utilities.csproj",
         "packagesPath": "C:\\Users\\HP2022\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode.Utilities\\obj\\",
+        "outputPath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

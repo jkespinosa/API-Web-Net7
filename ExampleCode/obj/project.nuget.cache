@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6I/4L7dKLnrt6CtRL7aCa5ESGJZeErUPfY7Zh9Yhsrf03PcOK+nTNpGEraXK0hrj0f17mZP6SqT26iAhW44AFg==",
+  "dgSpecHash": "oqdDyd7Q/l3mxbTbMW7hTlOp5eYjcgrnUI9+w/hl33a+D9YZHfDe5ou/rm5Jx5MYxk99RPU1H+PyuiS7T7Nm1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP2022\\Documents\\GitHub\\ExampleCode\\ExampleCode\\ExampleCode.API.csproj",
+  "projectFilePath": "C:\\Users\\HP2022\\Documents\\GitHub\\API-Web-Net7\\ExampleCode\\ExampleCode.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP2022\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\HP2022\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
