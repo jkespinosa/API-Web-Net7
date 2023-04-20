@@ -1,0 +1,12 @@
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\bin\Debug\net7.0\ExampleCode.Utilities.deps.json
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\bin\Debug\net7.0\ExampleCode.Utilities.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\bin\Debug\net7.0\ExampleCode.Utilities.pdb
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\ExampleCode.Utilities.csproj.AssemblyReference.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\ExampleCode.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\ExampleCode.Utilities.AssemblyInfoInputs.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\ExampleCode.Utilities.AssemblyInfo.cs
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\ExampleCode.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\ExampleCode.Utilities.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\refint\ExampleCode.Utilities.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\ExampleCode.Utilities.pdb
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Utilities\obj\Debug\net7.0\ref\ExampleCode.Utilities.dll

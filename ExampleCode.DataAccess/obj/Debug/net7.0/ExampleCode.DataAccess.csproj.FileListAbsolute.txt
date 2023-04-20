@@ -1,0 +1,15 @@
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\bin\Debug\net7.0\ExampleCode.DataAccess.deps.json
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\bin\Debug\net7.0\ExampleCode.DataAccess.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\bin\Debug\net7.0\ExampleCode.DataAccess.pdb
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\bin\Debug\net7.0\ExampleCode.Models.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\bin\Debug\net7.0\ExampleCode.Models.pdb
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ExampleCode.DataAccess.csproj.AssemblyReference.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ExampleCode.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ExampleCode.DataAccess.AssemblyInfoInputs.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ExampleCode.DataAccess.AssemblyInfo.cs
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ExampleCode.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ExampleCode.DataAccess.csproj.CopyComplete
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ExampleCode.DataAccess.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\refint\ExampleCode.DataAccess.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ExampleCode.DataAccess.pdb
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.DataAccess\obj\Debug\net7.0\ref\ExampleCode.DataAccess.dll

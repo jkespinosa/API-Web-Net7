@@ -1,0 +1,12 @@
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\bin\Debug\net7.0\ExampleCode.Models.deps.json
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\bin\Debug\net7.0\ExampleCode.Models.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\bin\Debug\net7.0\ExampleCode.Models.pdb
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\ExampleCode.Models.csproj.AssemblyReference.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\ExampleCode.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\ExampleCode.Models.AssemblyInfoInputs.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\ExampleCode.Models.AssemblyInfo.cs
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\ExampleCode.Models.csproj.CoreCompileInputs.cache
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\ExampleCode.Models.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\refint\ExampleCode.Models.dll
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\ExampleCode.Models.pdb
+C:\Users\HP2022\Documents\GitHub\ExampleCode\ExampleCode.Models\obj\Debug\net7.0\ref\ExampleCode.Models.dll
