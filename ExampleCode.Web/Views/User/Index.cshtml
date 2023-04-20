@@ -1,8 +1,37 @@
-﻿
+﻿@model IEnumerable<ExampleCode.Models.UserModel>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Lista de usuarios</h1>
+
+<p>
+    <a asp-action="Create"> Crear</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Configuraciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td hidden>@item.Id)</td>
+                <td>@item.Name)</td>
+                <td>@item.LastName)</td>
+                <td>@Html.ActionLink("Editar","Edit", new { id=item.Id}) |
+                @Html.ActionLink("Eliminar","Delete", new { id=item.Id})</td> 
+
+            </tr>
+        }
+    </tbody>
+</table>
 

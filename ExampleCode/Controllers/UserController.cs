@@ -37,6 +37,7 @@ namespace ExampleCode.API.Controllers
 
                 _response.result = _mapper.Map<IEnumerable<UserDto>>(usersList);
                 _response.statusCode = HttpStatusCode.OK;
+                _response.isExitoso = true;
 
                 return Ok(_response);
             }
@@ -71,6 +72,7 @@ namespace ExampleCode.API.Controllers
 
                 _response.result = _mapper.Map<UserDto>(userId);
                 _response.statusCode = HttpStatusCode.OK;
+                _response.isExitoso = true;
 
                 return Ok(_response);
             }
@@ -102,6 +104,7 @@ namespace ExampleCode.API.Controllers
 
                 _response.statusCode = HttpStatusCode.Created;
                 _response.result = model;
+                _response.isExitoso = true;
 
                 return CreatedAtRoute("GetUsertById", new { id = model.Id }, _response);
 
@@ -131,6 +134,7 @@ namespace ExampleCode.API.Controllers
 
                 _response.result = _mapper.Map<UserDto>(result);
                 _response.statusCode = HttpStatusCode.OK;
+                _response.isExitoso = true;
 
                 return Ok(result);
             }

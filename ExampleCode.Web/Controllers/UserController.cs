@@ -45,7 +45,11 @@ namespace ExampleCode.Web.Controllers
                     var content = await response.Content.ReadAsStringAsync();
                     var result = JsonSerializer.Deserialize<APIResponse>(content,options);
 
-                    return Ok(result);
+                    if(result.isExitoso ==true)
+                        userList = JsonSerializer.Deserialize<List<UserModel>>(result.result.ToString(), options);
+                  
+                    return View(userList);
+
                 }
 
 
