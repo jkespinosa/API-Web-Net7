@@ -27,12 +27,13 @@ namespace ExampleCode.API.Controllers
         }
 
         [HttpGet]
+        [Route("GetUser")]
         public async Task<ActionResult<APIResponse>> GetUsertList()
         {
             //_logger.LogInformation("Ibtener todos los suarios");
             try
             {
-                IEnumerable<User> usersList = await _userService.GetAllUserList();
+                IEnumerable<UserModel> usersList = await _userService.GetAllUserList();
 
                 _response.result = _mapper.Map<IEnumerable<UserDto>>(usersList);
                 _response.statusCode = HttpStatusCode.OK;
@@ -54,7 +55,7 @@ namespace ExampleCode.API.Controllers
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
-        public async Task<ActionResult<APIResponse>> GetUsertById( int Id)
+        public async Task<ActionResult<APIResponse>> GetUsertById(int Id)
         {
             if (Id == 0)
                 //_response.statusCode= HttpStatusCode.BadRequest;
@@ -62,7 +63,7 @@ namespace ExampleCode.API.Controllers
 
             try
             {
-                User userId = await _userService.GetUserById(Id);
+                UserModel userId = await _userService.GetUserById(Id);
 
                 if (userId == null)
                     // _response.statusCode= HttpStatusCode.NotFound;
@@ -70,8 +71,8 @@ namespace ExampleCode.API.Controllers
 
                 _response.result = _mapper.Map<UserDto>(userId);
                 _response.statusCode = HttpStatusCode.OK;
-                
-                return Ok (_response);
+
+                return Ok(_response);
             }
             catch (Exception ex)
             {
@@ -91,14 +92,14 @@ namespace ExampleCode.API.Controllers
                 if (createDto == null)
                     return BadRequest(createDto);
 
-                User model = _mapper.Map<User>(createDto);
+                UserModel model = _mapper.Map<UserModel>(createDto);
 
                 var result = await _userService.AddUser(model);
                 if (result == false)
                 {
                     return StatusCode(StatusCodes.Status500InternalServerError, "Something Went Wrong");
                 }
-               
+
                 _response.statusCode = HttpStatusCode.Created;
                 _response.result = model;
 
@@ -118,18 +119,15 @@ namespace ExampleCode.API.Controllers
         [HttpPut]
         public async Task<ActionResult<APIResponse>> Put(int id, [FromBody] UserUpdateDto updateDto)
         {
-
-            try {
-
+            try
+            {
                 if (updateDto == null)
                 {
                     return BadRequest();
                 }
-               
-                User model = _mapper.Map<User>(updateDto);
 
+                UserModel model = _mapper.Map<UserModel>(updateDto);
                 var result = await _userService.ModifyUser(model);
-                  
 
                 _response.result = _mapper.Map<UserDto>(result);
                 _response.statusCode = HttpStatusCode.OK;
@@ -146,7 +144,7 @@ namespace ExampleCode.API.Controllers
         }
 
         [HttpDelete]
-        public ActionResult<User> delete(User model)
+        public ActionResult<UserModel> delete(UserModel model)
         {
             var result = _userService.DeleteUser(model);
             if (result == false)

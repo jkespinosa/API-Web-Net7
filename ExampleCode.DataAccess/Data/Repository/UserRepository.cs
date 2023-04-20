@@ -21,19 +21,19 @@ namespace ExampleCode.DataAccess.Data.Repository
         }
 
 
-        public async Task<IEnumerable<User>> GetAllUserList()
+        public async Task<IEnumerable<UserModel>> GetAllUserList()
         {
             return await _dbContext.Users.ToListAsync();
         }
 
-        public async Task<User> GetUserById(int Id)
+        public async Task<UserModel> GetUserById(int Id)
         {
             //return await _dbContext.Users.FindAsync(Id);
 
             return await _dbContext.Users.Where(s => s.Id == Id).FirstOrDefaultAsync();
         }
 
-        public async Task<bool> AddUser(User model)
+        public async Task<bool> AddUser(UserModel model)
         {
             try
             {
@@ -46,7 +46,7 @@ namespace ExampleCode.DataAccess.Data.Repository
 
         }
 
-        public async Task<bool> ModifyUser(User model)
+        public async Task<bool> ModifyUser(UserModel model)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace ExampleCode.DataAccess.Data.Repository
             catch { return false; }
         }
 
-        public bool DeleteUser(User model)
+        public bool DeleteUser(UserModel model)
         {
             var exist = _dbContext.Users.Find(model.Id);
 

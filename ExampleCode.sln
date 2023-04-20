@@ -3,13 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleCode.API", "ExampleCode\ExampleCode.API.csproj", "{42930BE3-B1B6-40DC-91AB-68722BFA3116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleCode.API", "ExampleCode\ExampleCode.API.csproj", "{42930BE3-B1B6-40DC-91AB-68722BFA3116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleCode.DataAccess", "ExampleCode.DataAccess\ExampleCode.DataAccess.csproj", "{4552DCAA-D90B-43F0-B737-C325D56CE2F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleCode.DataAccess", "ExampleCode.DataAccess\ExampleCode.DataAccess.csproj", "{4552DCAA-D90B-43F0-B737-C325D56CE2F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleCode.Models", "ExampleCode.Models\ExampleCode.Models.csproj", "{A086AB28-19A8-4D5D-8CF7-7704AE250E73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleCode.Models", "ExampleCode.Models\ExampleCode.Models.csproj", "{A086AB28-19A8-4D5D-8CF7-7704AE250E73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleCode.Utilities", "ExampleCode.Utilities\ExampleCode.Utilities.csproj", "{DE13364A-9A4A-48FB-97D5-7675C7FE778E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleCode.Utilities", "ExampleCode.Utilities\ExampleCode.Utilities.csproj", "{DE13364A-9A4A-48FB-97D5-7675C7FE778E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleCode.Web", "ExampleCode.Web\ExampleCode.Web.csproj", "{A630B447-06CD-4C30-B4E1-60D5F71F0FE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6BF9EBAC-3DE5-4987-B025-5D510189984D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +40,10 @@ Global
 		{DE13364A-9A4A-48FB-97D5-7675C7FE778E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE13364A-9A4A-48FB-97D5-7675C7FE778E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE13364A-9A4A-48FB-97D5-7675C7FE778E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A630B447-06CD-4C30-B4E1-60D5F71F0FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A630B447-06CD-4C30-B4E1-60D5F71F0FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A630B447-06CD-4C30-B4E1-60D5F71F0FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A630B447-06CD-4C30-B4E1-60D5F71F0FE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,11 +11,11 @@ namespace ExampleCode.DataAccess.Data.Repository.IRepository
 {
     public interface IUserRepository
     {
-        Task<IEnumerable<User>> GetAllUserList();
-        Task<User> GetUserById(int Id);
-        Task<bool> AddUser(User model);
-        Task<bool> ModifyUser(User model);
-        bool DeleteUser(User model);
+        Task<IEnumerable<UserModel>> GetAllUserList();
+        Task<UserModel> GetUserById(int Id);
+        Task<bool> AddUser(UserModel model);
+        Task<bool> ModifyUser(UserModel model);
+        bool DeleteUser(UserModel model);
 
     }
 }

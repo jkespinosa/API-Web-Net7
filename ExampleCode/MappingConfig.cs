@@ -8,11 +8,11 @@ namespace ExampleCode.API
     {
         public MappingConfig() {
 
-            CreateMap<User, UserDto>();
-            CreateMap<UserDto, User>();
+            CreateMap<UserModel, UserDto>();
+            CreateMap<UserDto, UserModel>();
 
-            CreateMap<User, UserCreateDto>().ReverseMap();
-            CreateMap<User, UserUpdateDto>().ReverseMap();
+            CreateMap<UserModel, UserCreateDto>().ReverseMap();
+            CreateMap<UserModel, UserUpdateDto>().ReverseMap();
 
         }
     }
