@@ -35,6 +35,11 @@ namespace ExampleCode.Web.Controllers
 
             try
             {
+                //client.DefaultRequestHeaders.Add("Accept", "application/json");
+                //var endPint = "https://localhost:7090/api/GetUser";
+                //HttpResponseMessage response = await client.GetAsync(endPint);
+
+
 
                 HttpClient client = new HttpClient(handler);
                 HttpResponseMessage response = await client.GetAsync("https://localhost:7090/api/GetUser");

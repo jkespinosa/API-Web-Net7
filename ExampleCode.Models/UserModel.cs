@@ -18,4 +18,15 @@ namespace ExampleCode.Models
 
 
     }
+
+    public class UserModelTest
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public DateTime? InsertDate { get; set; }
+        public bool IsActive { get; set; }
+        public List<UserModel> data { get; set;}
+
+    }
 }
