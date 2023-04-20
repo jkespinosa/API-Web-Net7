@@ -120,7 +120,8 @@ namespace ExampleCode.API.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<APIResponse>> Put(int id, [FromBody] UserUpdateDto updateDto)
+        [Route("PutUser")]
+        public async Task<ActionResult<APIResponse>> Put(int id,  UserUpdateDto updateDto)
         {
             try
             {

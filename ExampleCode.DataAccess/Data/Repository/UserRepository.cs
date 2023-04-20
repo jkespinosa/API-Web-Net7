@@ -23,14 +23,16 @@ namespace ExampleCode.DataAccess.Data.Repository
 
         public async Task<IEnumerable<UserModel>> GetAllUserList()
         {
-            return await _dbContext.Users.ToListAsync();
+            //return await _dbContext.Users.ToListAsync();
+
+            return await _dbContext.Users.OrderByDescending(x => x.Id).ToListAsync();
         }
 
         public async Task<UserModel> GetUserById(int Id)
         {
             //return await _dbContext.Users.FindAsync(Id);
 
-            return await _dbContext.Users.Where(s => s.Id == Id).FirstOrDefaultAsync();
+            return await _dbContext.Users.Where(s => s.Id == Id).OrderByDescending(x => x.Id).FirstOrDefaultAsync();
         }
 
         public async Task<bool> AddUser(UserModel model)
